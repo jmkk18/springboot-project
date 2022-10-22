@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>链接表达式</title>
+</head>
+<body>
+    <h3>链接绝对路径</h3>
+    <a th:href="@{http://www.baidu.com}">链接到百度</a>
+
+    <h3>链接相对路径</h3>
+    <a th:href="@{/tpl/queryAccount}">相对地址,没有参数</a>
+    <h3>链接相对路径,使用字符串连接传递参数</h3>
+    <a th:href="@{'/tpl/queryAccount?id='+${userId}}">相对地址,获取model中数据</a>
+    <br>
+    <div th:include="footer :: ooo"/>
+
+</body>
+</html>

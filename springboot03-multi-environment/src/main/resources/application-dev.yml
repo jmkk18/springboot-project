@@ -1,0 +1,5 @@
+#项目开发使用的配置文件
+server:
+  port: 8001
+  servlet:
+    context-path: /mydev
